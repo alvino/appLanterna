@@ -74,5 +74,21 @@ public class LanternaActivity extends Activity {
 		turnOnFlashLight();
 		
 	}
+	
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		
+		turnOffFlashLight();
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		
+		turnOnFlashLight();
+	}
 
 }
